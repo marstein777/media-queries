@@ -1,39 +1,47 @@
+[class*="col_"] {
+  float: left;
+}
+
+
 /*Device = small*/
 @media only screen and (max-width: 300px) {
   body {
     background-color: red;
+    font-size: 20px;
+    width: 100%;
    }
-   #medium {
-     display: none;
-   }
-   #large {
-    display: none;
   }
-  }
-
 
 /*Device = medium*/
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   body {
     background-color: green;
+    font-size: 30px;
   }
-  #small {
-    display: none;
+  .col_M_1 {
+    width: 66.66%;
   }
-  #large {
-   display: none;
- }
+  .col_M_2 {
+    width: 33%;
+  }
+  .col_M_3 {
+    width: 100%;
+  }
 }
 
 /*Device = large*/
 @media only screen and (min-width: 768px) {
   body {
     background-color: blue;
+    font-size: 40px;
   }
-  #small {
-    display: none;
+  .col_L_1 {
+    width: 33.33%;
   }
-  #medium {
-   display: none;
- }
-}
+  .col_L_2 {
+    width: 33.33%;
+  }
+  .col_L_3 {
+    width: 33.33%;
+  }
+  }
